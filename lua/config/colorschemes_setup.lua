@@ -1,0 +1,5 @@
+vim.cmd("colorscheme tokyodark")
+-- vim.cmd("colorscheme carbonfox")
+-- vim.cmd("colorscheme nightfox")
+-- vim.cmd("colorscheme terafox")
+-- vim.cmd("colorscheme duskfox")
