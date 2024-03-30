@@ -1,5 +1,6 @@
 -- requirements
 require("config.lazy_setup")
+require("config.ayu_setup")
 require("config.colorschemes_setup")
 require("config.nvim_tree_setup")
 require("config.lualine_setup")
