@@ -14,11 +14,24 @@ vim.cmd("TransparentEnable")
 
 -- setup keymaps
 vim.keymap.set("n", "<leader>h", ":noh<CR>") -- remove hilight
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- find files
-vim.keymap.set("n", "<leader>cs", ":Telescope colorscheme<CR>") -- change colorscheme
-vim.keymap.set("n", "<leader>lf", ":Telescope current_buffer_fuzzy_find<CR>") -- local finder
-vim.keymap.set("n", "<leader>gf", ":Telescope live_grep<CR>") -- global finder
--- serd tree toggle
+
+vim.keymap.set("n", "<leader>ff", function()
+    require("telescope.builtin").find_files()
+end) -- find files
+
+vim.keymap.set("n", "<leader>cs", function()
+    require("telescope.builtin").colorscheme()
+end) -- change colorscheme
+
+vim.keymap.set("n", "<leader>lf", function()
+    require("telescope.builtin").current_buffer_fuzzy_find()
+end) -- local find
+
+vim.keymap.set("n", "<leader>gf", function()
+    require("telescope.builtin").live_grep()
+end) -- global find
+
+-- nerd tree toggle
 vim.keymap.set("n", "<leader>E", ":NvimTreeToggle<CR>")
 -- open file_browser with the path of the current buffer
 vim.keymap.set("n", "<space>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
