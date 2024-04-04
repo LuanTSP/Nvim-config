@@ -57,6 +57,19 @@ local plugins = {
         dependencies = {{ "nvim-tree/nvim-web-devicons", lazy = true }},
     },
     {"xiyaowong/transparent.nvim"},
+    {'stevearc/oil.nvim',
+        opts = {},
+    },
+    {'stevearc/dressing.nvim',
+        opts = {},
+    },
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        lazy = false,
+    },
 }
 
 require("lazy").setup(plugins, opts)

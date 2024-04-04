@@ -26,7 +26,7 @@ db.setup({
       {
         icon = '󰙅',
         desc = "   File Tree 󰍉",
-        key = "space E",
+        key = "space t",
         action = "NvimTreeToggle",
       },
       {
